@@ -8,9 +8,9 @@
     win_shell: $env:computername
     register: myvar
   - name: Hostname by Ansible Facts
-    - debug:
-        msg: "The hostname is {{ ansible_hostname }}"
-        msg: "The hostname from myvar is {{ myvar }}"
+  - debug:
+      msg: "The hostname is {{ ansible_hostname }}"
+      msg: "The hostname from myvar is {{ myvar }}"
         #
         #
         #
