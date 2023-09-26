@@ -10,6 +10,7 @@
   - name: Hostname by Ansible Facts
   - debug:
       msg: "The hostname is {{ ansible_hostname }}"
+  - debug:
       msg: "The hostname from myvar is {{ myvar }}"
         #
         #
