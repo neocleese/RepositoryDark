@@ -1,2 +1,22 @@
 ---
-- Name: pb
+- name: Gather credentials - PB1
+  hosts: all
+  gather_facts: false
+# prerequisites = have a collections folder in your repo
+# with requirements.yml in it with the following:
+#---
+#collections:
+# - pge_util.papm_util
+#
+  tasks:
+# 
+# task needed for credentials in playbookone.yml
+#
+  - name: Include task list in play - import - task 1
+    ansible.builtin.import_tasks:
+      # make sure to have playbookeone in your repo 
+      file: playbookone.yml
+- Name: Hostname from Ansible Facts 
+  gather_facts: true    
+  - debug:
+      msg: "{{ ansible_hostname }}"
