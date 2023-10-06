@@ -16,7 +16,13 @@
     ansible.builtin.import_tasks:
       # make sure to have playbookeone in your repo 
       file: Cgermplaybook.yml
-- Name: Hostname from Ansible Facts 
-  gather_facts: true    
+
+- Name: Playbook2
+  Hosts: All
+  gather_facts: true
+  Tasks: 
+  - name: ping
+    Win_ping:
+
   - debug:
-      msg: "{{ ansible_hostname }}"
+      msg: "host from ansible facts {{ ansible_hostname }}"
