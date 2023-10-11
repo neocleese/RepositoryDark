@@ -15,7 +15,7 @@
   - name: Include task list in play - import - task 1
     ansible.builtin.import_tasks:
       # make sure to have playbookeone in your repo 
-      file: Cgermplaybook.yml
+      file: CGermPlaybook.yml
 
 - Name: Playbook2
   Hosts: All
