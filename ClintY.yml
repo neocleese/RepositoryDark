@@ -17,10 +17,10 @@
       # make sure to have playbookeone in your repo 
       file: CGermPlaybook.yml
 
-- Name: Playbook2
-  Hosts: All
+- name: Playbook2
+  hosts: All
   gather_facts: true
-  Tasks: 
+  tasks: 
   - name: ping
     Win_ping:
 
