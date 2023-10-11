@@ -19,6 +19,7 @@
 
 - name: Playbook2
   hosts: all
+  no_log: false
   gather_facts: true
   tasks: 
   - name: ping
