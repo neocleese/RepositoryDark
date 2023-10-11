@@ -26,3 +26,4 @@
 
   - debug:
       msg: "host from ansible facts {{ ansible_hostname }}"
+    
