@@ -22,7 +22,7 @@
   gather_facts: true
   tasks: 
   - name: ping
-    Win_ping:
+    win_ping:
 
   - debug:
       msg: "host from ansible facts {{ ansible_hostname }}"
