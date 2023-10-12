@@ -77,7 +77,7 @@
   hosts: all 
 
   gather_facts: true 
-
+  no_log: false
  
  
 
