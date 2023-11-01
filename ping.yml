@@ -37,3 +37,4 @@
     ansible.builtin.win_ping: 
   - debug: 
       msg: "Ansible hostname is {{ ansible_hostname }}" 
+      #
